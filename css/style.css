@@ -13,9 +13,14 @@
   box-sizing: border-box;
 }
 
+#submit-btn {
+  background-image: url("../images/icon-check.svg"), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-size: cover;
+}
+
 .background-top {
   width: 100%;
-  background-image: url(/images/bg-mobile-dark.jpg);
+  background-image: url(../images/milky-way-2695569_1280.jpg);
   background-size: cover;
   height: 40vh;
 }
@@ -40,7 +45,7 @@ body {
   position: absolute;
 }
 
-.todo-input, .user-list, .list-count {
+.todo-input, .list-count {
   display: flex;
   align-items: center;
   width: 100%;
@@ -77,6 +82,10 @@ body {
 }
 
 .user-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--todo-bg-color);
   border-bottom: solid 0.1px rgba(255, 255, 255, 0.292);
 }
 
@@ -148,12 +157,16 @@ body {
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 .check-mark {
-  background-image: url("/images/icon-check.svg"), linear-gradient(hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+  background-image: url("../images/icon-check.svg"), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   background-size: cover;
+}
+
+.count {
+  padding: 1em;
 }
 
 .todo-input-light {
@@ -174,7 +187,7 @@ body {
 }
 
 .bg-light {
-  background-image: url(/images/bg-mobile-light.jpg);
+  background-image: url(../images/trees-3294681_1280.jpg);
   width: 100%;
   background-size: cover;
   height: 40vh;
@@ -225,11 +238,11 @@ body.light {
 
 @media only screen and (min-width: 620px) {
   .background-top {
-    background-image: url(/images/bg-desktop-dark.jpg);
+    background-image: url(../images/milky-way-2695569_1280.jpg);
     background-size: cover;
   }
   .bg-light {
-    background-image: url(/images/bg-desktop-light.jpg);
+    background-image: url(../images/trees-3294681_1280.jpg);
     background-size: cover;
   }
 }

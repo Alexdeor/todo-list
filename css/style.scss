@@ -13,10 +13,13 @@
     padding:0;
     box-sizing: border-box;
 }
-
+#submit-btn{
+    background-image: url('../images/icon-check.svg'),linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    background-size: cover;
+}
 .background-top{
 width: 100%;
-background-image: url(/images/bg-mobile-dark.jpg);
+background-image: url(../images/milky-way-2695569_1280.jpg);
 background-size: cover;
 height: 40vh;
 img{
@@ -24,6 +27,7 @@ img{
     height: 30vh;
 
 }
+
 }
 body{
     display: grid;
@@ -40,7 +44,7 @@ body{
     width: 90%;
     position: absolute;
 }
-.todo-input, .user-list,.list-count{
+.todo-input,.list-count{
 display: flex;
 align-items: center;
 width: 100%;
@@ -76,6 +80,10 @@ border-color: transparent;
     width: 3%;
 }
 .user-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--todo-bg-color);
     border-bottom: solid .1px rgba(255, 255, 255, 0.292) ;
 }
 .todo-box{
@@ -142,10 +150,13 @@ li{
 
 //switch theme
 .check-mark{
-    background-image: url('/images/icon-check.svg'),linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    background-image: url('../images/icon-check.svg'),linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
     background-size: cover;
     
 
+}
+.count{
+padding: 1em;
 }
 .todo-input-light{
     height: 70%;
@@ -167,7 +178,7 @@ li{
     
     }
 .bg-light{
-background-image: url(/images/bg-mobile-light.jpg);
+background-image: url(../images/trees-3294681_1280.jpg);
 width: 100%;
 background-size: cover;
 height: 40vh;
@@ -215,11 +226,11 @@ border-color: transparent;
 
     @media only screen and (min-width: 620px) {
         .background-top{
-            background-image: url(/images/bg-desktop-dark.jpg);
+            background-image: url(../images/milky-way-2695569_1280.jpg);
             background-size: cover;
         }
         .bg-light{
-            background-image: url(/images/bg-desktop-light.jpg);
+            background-image: url(../images/trees-3294681_1280.jpg);
              background-size: cover;
 
             }
